@@ -9,9 +9,8 @@ function decision_to_play(){
     do
         python3 Rock_paper_scissors.py
     done
-    while [[$decision == "n"]] 
-        echo "That's too bad, maybe next time"
-    done
+    
+    echo "That's too bad, maybe next time"
     
     fi
 }
