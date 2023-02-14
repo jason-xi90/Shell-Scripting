@@ -5,14 +5,16 @@
 function decision_to_play(){
     echo "Would you like to play rock paper scissors? (y/n):"
     read decision
-    if [[$decision == "y"]] 
-    then
+    while [[$decision == "y"]] 
+    do
         python3 Rock_paper_scissors.py
-    else
+    done
+    while [[$decision == "n"]] 
         echo "That's too bad, maybe next time"
+    done
+    
     fi
 }
 
-#Cannot set up the permission with "chmod" as I am using a Windows system.
 
 
